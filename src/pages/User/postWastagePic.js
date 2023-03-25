@@ -24,10 +24,18 @@ function UploadImage() {
   };
 
   return (
+    <div>
+      <div>
     <form onSubmit={handleSubmit}>
       <input type="file" onChange={handleFileChange} />
       <button type="submit">Upload</button>
     </form>
+    </div>
+
+    <div>
+    <Link href="/"><h2 type="url">Back to Home</h2></Link>
+    </div>
+    </div>
   );
 }
 

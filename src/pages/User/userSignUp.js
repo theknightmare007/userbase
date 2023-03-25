@@ -52,6 +52,8 @@ const handleSubmit = async (event) => {
         
         <button><Link href='/User/userLogin'>Back to Login</Link></button>
 
+        <Link href="/"><h2 type="url">Back to Home</h2></Link>
+
         </div>
     )
 }

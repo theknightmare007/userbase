@@ -14,6 +14,7 @@ const Login = () => {
         <input type="file" />
         <button>Login</button><br/>
         <button><Link href="/User/userSignUp">Back to Sign Up</Link></button>
+        <Link href="/"><h2 type="url">Back to Home</h2></Link>
         
         </div>
     )
