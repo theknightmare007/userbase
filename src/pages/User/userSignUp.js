@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import Layout from "../components/topLayout";
 
 
 
@@ -34,9 +35,10 @@ const handleSubmit = async (event) => {
   
 
     return (
+      
         <div align="center">
-
             <h1>Cool User Login</h1>
+
 
         <input onChange={(e) => setName(e.target.value) } value={name}type='text' placeholder="Name"></input><br/>
         
@@ -55,6 +57,7 @@ const handleSubmit = async (event) => {
         <Link href="/"><h2 type="url">Back to Home</h2></Link>
 
         </div>
+        
     )
 }
 export default User;
