@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Link from "next/link";
+import NavBar from "../components/NavBar";
 
 
 
@@ -23,8 +24,20 @@ function UploadImage() {
     console.log(data);
   };
 
+  const needLogin = false;
+    const onDashboard= true;
+    const onRewards = true;
+    const onParticipate = true;
+    const onPostPic = true;
+
   return (
-    <div>
+    <div className="intro-title">
+       <NavBar
+            needLogin={needLogin}
+            onDashboard={onDashboard}
+            onRewards={onRewards}
+            onParticipate={onParticipate}
+            onPostPic={onPostPic}></NavBar>
       <div>
     <form onSubmit={handleSubmit}>
       <input type="file" onChange={handleFileChange} />

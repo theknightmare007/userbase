@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import Layout from "../components/topLayout";
+import NavBar from "../components/NavBar";
 
 
 
@@ -32,11 +33,17 @@ const handleSubmit = async (event) => {
     const data = await response.json();
     console.log(data); // Print the response data to the console for testing
   };
+  const needLogin = true;
+  const needSignUp = true;
   
 
     return (
       
-        <div align="center">
+        <div align="center" className="intro-title">
+          <NavBar 
+          needLogin={needLogin}
+          needSignUp={needSignUp}
+          />
             <h1>Cool User Login</h1>
 
 

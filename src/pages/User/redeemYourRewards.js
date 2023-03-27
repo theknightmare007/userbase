@@ -1,9 +1,23 @@
 import React from "react";
 import Link from "next/link";
+import NavBar from "../components/NavBar";
 
 const Rewards = () => {
+
+    const needLogin = false;
+    const onDashboard= true;
+    const onRewards = true;
+    const onParticipate = true;
+    const onPostPic = true;
+
     return (
-        <div align ="center">
+        <div align ="center" className="intro-title">
+            <NavBar
+            needLogin={needLogin}
+            onDashboard={onDashboard}
+            onRewards={onRewards}
+            onParticipate={onParticipate}
+            onPostPic={onPostPic}></NavBar>
         <h1 align ="center">Redeem You Rewards</h1>
         <table style={{ fontSize: '22px' }}>
             <thead >
