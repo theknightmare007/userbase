@@ -13,6 +13,7 @@ import NavBar from './components/NavBar'
 import greenImg from '../images/trust-bg.jpg'
 import natureImg from '../images/keepgreen.jpg'
 import AboutUs from './components/aboutUs'
+import adminImg from '../images/admin.jpg'
 
 
  
@@ -24,14 +25,13 @@ export default function Home() {
   const needSignUp =true;
   return (
    
-      <div className='blue'
-      >
+      <div className='blue'>
       <div><NavBar
       needSignUp={needSignUp} 
       /></div>
-        <div className='App'>
+        <div >
   <h1 align="center" className="intro-title">This will be our intro, slideshow type maybe (image transition with faded animation)</h1>
-<h3>Login</h3>
+ 
   <div className="image-container">
     <Link href="/User/userLogin">
       <Image src={LoginImg} /><br/>
@@ -66,10 +66,14 @@ export default function Home() {
 `}</style>
       <br/>
         <div className="container">
-  <div className="image-box">
-    <img src="" alt="Image description" />
-  </div>
+        
 </div>
+<div className='.image-container' align="center">
+    <h1 align="center">Admin Login</h1>
+    <Link href="/Admin/AdminLogin"><Image src={adminImg}/></Link>
+    <br/>
+
+  </div>
         </div>
 
         
