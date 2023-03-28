@@ -9,15 +9,16 @@ const Rewards = () => {
     const onRewards = true;
     const onParticipate = true;
     const onPostPic = true;
+    const onAboutUs = true;
 
     return (
         <div align ="center" className="intro-title">
             <NavBar
-            needLogin={needLogin}
             onDashboard={onDashboard}
             onRewards={onRewards}
             onParticipate={onParticipate}
-            onPostPic={onPostPic}></NavBar>
+            onPostPic={onPostPic}
+            onAboutUs={onAboutUs}></NavBar>
         <h1 align ="center">Redeem You Rewards</h1>
         <table style={{ fontSize: '22px' }}>
             <thead >

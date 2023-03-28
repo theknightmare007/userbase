@@ -3,21 +3,23 @@ import Link from "next/link";
 import NavBar from "../components/NavBar";
 
 const Dashboard = () => {
-    const needLogin = false;
+   
     const onDashboard= true;
     const onRewards = true;
     const onParticipate = true;
     const onPostPic = true;
+    const onAboutUs = true;
 
     return (
         <div className="intro-title">
             <h1 align="center">Dashboard</h1>
              <NavBar
-            needLogin={needLogin}
+            
             onDashboard={onDashboard}
             onRewards={onRewards}
             onParticipate={onParticipate}
-            onPostPic={onPostPic}></NavBar>
+            onPostPic={onPostPic}
+            onAboutUs={onAboutUs}></NavBar>
             <div className='blue'>
                 <h2 align="left">Activity</h2>
                 <br/><b>First Contribution:</b><i> fetch from DB</i>

@@ -24,20 +24,21 @@ function UploadImage() {
     console.log(data);
   };
 
-  const needLogin = false;
     const onDashboard= true;
     const onRewards = true;
     const onParticipate = true;
     const onPostPic = true;
+    const onAboutUs = true;
 
   return (
     <div className="intro-title">
        <NavBar
-            needLogin={needLogin}
+           
             onDashboard={onDashboard}
             onRewards={onRewards}
             onParticipate={onParticipate}
-            onPostPic={onPostPic}></NavBar>
+            onPostPic={onPostPic}
+            onAboutUs={onAboutUs}></NavBar>
       <div>
     <form onSubmit={handleSubmit}>
       <input type="file" onChange={handleFileChange} />
@@ -45,8 +46,10 @@ function UploadImage() {
     </form>
     </div>
 
-    <div>
-    <Link href="/"><h2 type="url">Back to Home</h2></Link>
+    <div align="center">
+      <h1>Your Uploaded Image</h1>
+      <div style={{width: '500px', height: '500px', border: '1px solid #ccc'}}></div>
+      <button>Confirm</button>                                               <button>Retry</button>
     </div>
     </div>
   );

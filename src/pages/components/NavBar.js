@@ -6,7 +6,8 @@ const NavBar = (props) => {
   const onRewards = props.onRewards;
   const onParticipate = props.onParticipate;
   const onPostPic = props.onPostPic;
-  const needSignUp = props.needSignUp
+  const onAboutUs = props.onAboutUs;
+  const needSignUp = props.needSignUp;
 
   return (
     <nav>
@@ -39,7 +40,7 @@ const NavBar = (props) => {
 
         {onParticipate && (
           <li>
-            <Link href="/User/redeemYourRewards">Participate</Link>
+            <Link href="/User/Participate">Participate</Link>
           </li>
         )}
 
@@ -48,10 +49,11 @@ const NavBar = (props) => {
             <Link href="/User/postWastagePic">Upload </Link>
           </li>
         )}
-
+        {onAboutUs && (
         <li>
           <Link href="/components/aboutUs">About Us</Link>
         </li>
+        )}
 
       </ul>
     </nav>
