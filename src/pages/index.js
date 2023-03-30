@@ -26,6 +26,9 @@ export default function Home() {
   return (
    
       <div className='blue'>
+        <Head >
+        
+        </Head>
       <div><NavBar
       needSignUp={needSignUp} 
       /></div>
